@@ -117,33 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="expander1.CollapseImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAADdJREFUOE9j
-        GAVEgf9QmiwA0gzDJANkjSQbgk0DyYbAAFmaYABmK9k2wzSSbAg2DSQbMjIAAwMAutEX6Y2MpDAAAAAA
-        SUVORK5CYII=
-</value>
-  </data>
-  <data name="expander1.ExpandImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAADlJREFUOE9j
-        GAU4wX8oRgbYxPACZA0ka4YBmEayNMMARTYjA5JdgqyBZM0wANNIlmYYoEjz8AcMDADKCBfp1V4ifAAA
-        AABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="expander2.CollapseImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAADdJREFUOE9j
-        GAVEgf9QmiwA0gzDJANkjSQbgk0DyYbAAFmaYABmK9k2wzSSbAg2DSQbMjIAAwMAutEX6Y2MpDAAAAAA
-        SUVORK5CYII=
-</value>
-  </data>
-  <data name="expander2.ExpandImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAADlJREFUOE9j
-        GAU4wX8oRgbYxPACZA0ka4YBmEayNMMARTYjA5JdgqyBZM0wANNIlmYYoEjz8AcMDADKCBfp1V4ifAAA
-        AABJRU5ErkJggg==
-</value>
-  </data>
 </root>

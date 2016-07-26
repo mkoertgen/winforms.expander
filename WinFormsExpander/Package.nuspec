@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>WinFormsExpander</id>
+    <version>$Version$</version>
+    <title>WinFormsExpander</title>
+    <authors>Awesome Incremented and Contributors</authors>
+    <owners>Awesome Incremented and Contributors</owners>
+    <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Windows forms Expander control and TablePanelLayout.</description>
+    <summary>A Windows forms Expander control and TablePanelLayout.</summary>
+    <copyright/>
+    <releaseNotes>Revision: $Revision$</releaseNotes>
+    <projectUrl>https://github.com/mkoertgen/winforms.expander</projectUrl>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Windows.Forms"/>
+      <frameworkAssembly assemblyName="System.Drawing"/>
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin\Release\WinFormsExpander.*" target="lib\net45"/>
+  </files>
+</package>

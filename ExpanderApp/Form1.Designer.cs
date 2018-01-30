@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this._expanderTablePanel1 = new WinFormsExpander.ExpanderTablePanel();
             this.expander1 = new WinFormsExpander.Expander();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -38,16 +39,28 @@
             this.button1 = new System.Windows.Forms.Button();
             this.expander3 = new WinFormsExpander.Expander();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this._expanderTablePanel1.SuspendLayout();
             this.expander1.Content.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.expander2.Content.SuspendLayout();
             this.expander3.Content.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this._expanderTablePanel1);
+            this.splitContainer1.Size = new System.Drawing.Size(1126, 749);
+            this.splitContainer1.SplitterDistance = 375;
+            this.splitContainer1.TabIndex = 4;
             // 
             // _expanderTablePanel1
             // 
@@ -63,7 +76,7 @@
             this._expanderTablePanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this._expanderTablePanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this._expanderTablePanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this._expanderTablePanel1.Size = new System.Drawing.Size(375, 792);
+            this._expanderTablePanel1.Size = new System.Drawing.Size(375, 749);
             this._expanderTablePanel1.TabIndex = 3;
             // 
             // expander1
@@ -73,12 +86,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.expander1.AutoScroll = true;
             this.expander1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.expander1.CollapseImage = ((System.Drawing.Image)(resources.GetObject("expander1.CollapseImage")));
             // 
             // expander1.Content
             // 
             this.expander1.Content.AutoScroll = true;
             this.expander1.Content.Controls.Add(this.tabControl1);
+            this.expander1.ExpandImage = ((System.Drawing.Image)(resources.GetObject("expander1.ExpandImage")));
             this.expander1.Location = new System.Drawing.Point(3, 3);
+            this.expander1.MinimumSize = new System.Drawing.Size(0, 53);
             this.expander1.Name = "expander1";
             this.expander1.Size = new System.Drawing.Size(369, 257);
             this.expander1.TabIndex = 0;
@@ -109,7 +125,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1110, 201);
+            this.tabPage2.Size = new System.Drawing.Size(359, 201);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -121,14 +137,17 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.expander2.AutoScroll = true;
             this.expander2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.expander2.CollapseImage = ((System.Drawing.Image)(resources.GetObject("expander2.CollapseImage")));
             // 
             // expander2.Content
             // 
             this.expander2.Content.AutoScroll = true;
             this.expander2.Content.AutoScrollMinSize = new System.Drawing.Size(150, 50);
             this.expander2.Content.Controls.Add(this.button1);
+            this.expander2.ExpandImage = ((System.Drawing.Image)(resources.GetObject("expander2.ExpandImage")));
             this.expander2.Header = "Header2";
             this.expander2.Location = new System.Drawing.Point(3, 266);
+            this.expander2.MinimumSize = new System.Drawing.Size(0, 53);
             this.expander2.Name = "expander2";
             this.expander2.Size = new System.Drawing.Size(369, 114);
             this.expander2.TabIndex = 1;
@@ -149,14 +168,17 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.expander3.AutoScroll = true;
             this.expander3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.expander3.CollapseImage = ((System.Drawing.Image)(resources.GetObject("expander3.CollapseImage")));
             // 
             // expander3.Content
             // 
             this.expander3.Content.AutoScroll = true;
             this.expander3.Content.AutoScrollMinSize = new System.Drawing.Size(150, 50);
             this.expander3.Content.Controls.Add(this.checkBox1);
+            this.expander3.ExpandImage = ((System.Drawing.Image)(resources.GetObject("expander3.ExpandImage")));
             this.expander3.Header = "Header3";
             this.expander3.Location = new System.Drawing.Point(3, 386);
+            this.expander3.MinimumSize = new System.Drawing.Size(0, 53);
             this.expander3.Name = "expander3";
             this.expander3.Size = new System.Drawing.Size(369, 403);
             this.expander3.TabIndex = 2;
@@ -171,36 +193,23 @@
             this.checkBox1.Text = "checkBox1";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this._expanderTablePanel1);
-            this.splitContainer1.Size = new System.Drawing.Size(1126, 792);
-            this.splitContainer1.SplitterDistance = 375;
-            this.splitContainer1.TabIndex = 4;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1126, 792);
+            this.ClientSize = new System.Drawing.Size(1126, 749);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this._expanderTablePanel1.ResumeLayout(false);
             this.expander1.Content.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.expander2.Content.ResumeLayout(false);
             this.expander3.Content.ResumeLayout(false);
             this.expander3.Content.PerformLayout();
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

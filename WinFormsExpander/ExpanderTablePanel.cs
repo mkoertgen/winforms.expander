@@ -47,16 +47,14 @@ namespace WinFormsExpander
         protected override void OnControlAdded(ControlEventArgs e)
         {
             base.OnControlAdded(e);
-            var expander = e.Control as Expander;
-            if (expander != null)
+            if (e.Control is Expander expander)
                 expander.ExpandedChanged += Expander_ExpandedChanged;
         }
 
         protected override void OnControlRemoved(ControlEventArgs e)
         {
             base.OnControlRemoved(e);
-            var expander = e.Control as Expander;
-            if (expander != null)
+            if (e.Control is Expander expander)
                 expander.ExpandedChanged -= Expander_ExpandedChanged;
         }
 
@@ -110,8 +108,7 @@ namespace WinFormsExpander
             { 
                 // check if we can apply the delta on this row
                 height = _rowHeights[r] + delta;
-                int pairingRow;
-                var coercedHeight = CoerceRowHeight(r, height, out pairingRow, false);
+                var coercedHeight = CoerceRowHeight(r, height, out int pairingRow, false);
                 if (coercedHeight != height) continue;
                 row = r;
                 break;
@@ -202,8 +199,7 @@ namespace WinFormsExpander
             _rowHeights = GetRowHeights();
             if (row >= _rowHeights.Length) return;
 
-            int pairingRow;
-            var newHeight = CoerceRowHeight(row, height, out pairingRow, adjustPair);
+            var newHeight = CoerceRowHeight(row, height, out int pairingRow, adjustPair);
             if (newHeight == _rowHeights[row]) return; // no change
 
             if (adjustPair && row == pairingRow) // cannot change
@@ -303,8 +299,7 @@ namespace WinFormsExpander
         private bool IsFixed(int row, bool checkToggle = false)
         {
             var control = GetControlFromPosition(0, row);
-            var expander = control as Expander;
-            if (expander != null)
+            if (control is Expander expander)
             {
                 var isFixed = !expander.IsExpanded;
                 if (checkToggle)

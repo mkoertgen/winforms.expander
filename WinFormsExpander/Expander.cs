@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace WinFormsExpander
 {
-    [Designer(typeof (ExpanderDesigner))]
+    [Designer(typeof(ExpanderDesigner))]
     public partial class Expander : UserControl
     {
         private static readonly Bitmap DefaultCollapseImage = Properties.Resources.Collapse;
@@ -87,7 +87,8 @@ namespace WinFormsExpander
             }
         }
 
-        internal bool CanToggle
+        [Category("Appearance"), DefaultValue(typeof(bool), "true")]
+        public bool CanToggle
         {
             get { return expandButton.Enabled; }
             set
